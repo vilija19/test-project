@@ -1,7 +1,8 @@
 <?php
 namespace Library;
 
-class Engine{
+class Engine
+{
 
     protected $engineType;
     protected $power;
@@ -14,11 +15,11 @@ class Engine{
 
     public function start()
     {
-        echo "I'm have started "; 
+        echo "Engine ON <br>"; 
     }
 
     public function stop()
     {
-        echo "I'm have stoped "; 
+        echo "Engine OFF <br>"; 
     }   
 }

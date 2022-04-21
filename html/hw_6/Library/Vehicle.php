@@ -16,6 +16,10 @@ abstract class Vehicle
         return $this->vehicleType;
     }
 
+    public function get_vendor(){
+        return $this->vendor;
+    }   
+
     public function get_speed(){
         return $this->speed;
     }  

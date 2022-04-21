@@ -34,18 +34,19 @@ class Car extends Vehicle implements MovableInterface
     public function start()
     {
         $this->engine->start();// <<<<<<<
-        echo 'I am starting';
+        echo 'I am starting <br>';
     }
     public function stop()
     {
         $this->engine->stop();// <<<<<<<
-        echo 'I am stoping';
+        echo 'I am stoping <br>';
     } 
     public function up(int $unit)
     {
         $this->currentSpeed();
         if ($unit > $this->maxSpeed) {
             $unit =  $this->maxSpeed;
+        }else{
             $this->transmission->gearUp();// <<<<<<<
         }
         $this->speed =   $unit;    

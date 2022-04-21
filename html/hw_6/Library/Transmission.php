@@ -1,7 +1,8 @@
 <?php
 namespace Library;
 
-class Transmission{
+class Transmission
+{
 
     protected $transmissionType;
     protected $maxSteps;
@@ -16,7 +17,7 @@ class Transmission{
 
     public function setNeutral()
     {
-        echo "Transmission is off"; 
+        echo "Transmission is off<br>"; 
     }
 
     public function gearUp()
@@ -27,17 +28,17 @@ class Transmission{
         }else{
             echo "You on the max step <br>"; 
         }
-        echo "Current step is " . $this->currentStep; 
+        echo "Current step is " . $this->currentStep . '<br>'; 
     }   
 
     public function gearDown()
     {
-        if ($this->currentStep < 0) {
+        if ($this->currentStep > 0) {
             $this->currentStep--;
             echo "Gear is DOWN  <br>"; 
         }else{
             echo "You on the lowest step <br>"; 
         }
-        echo "Current step is " . $this->currentStep; 
+        echo "Current step is " . $this->currentStep. '<br>'; 
     }     
 }
