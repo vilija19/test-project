@@ -7,7 +7,8 @@
 
 
 // Added autoloader
-function autoload($className) {
+function autoload($className) 
+{
   $path = str_replace('\\','/',$className);
 
 	$filename = __DIR__  . '/' . $path . '.php';
@@ -24,8 +25,8 @@ Library\Truck::setFuelType('Diesel');
 Library\Car::setFuelType('Gas');
 
 //Set fuel type for whole class
-$truck = new Library\Truck('MAN',150);
-$car = new Library\Car('BMW',250);
+$truck = new Library\Truck('MAN',150, new Library\Engine('V16',300));
+$car = new Library\Car('BMW',250,new Library\Engine('V8',120));
 
 
 if (isset($_POST['set_speed'])) {

@@ -12,11 +12,13 @@ abstract class Vehicle
 
     abstract public function currentSpeed();
     
-    public function get_vehicleType(){
+    public function get_vehicleType()
+    {
         return $this->vehicleType;
     }
 
-    public function get_speed(){
+    public function get_speed()
+    {
         return $this->speed;
     }  
 
