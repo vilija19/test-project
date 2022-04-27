@@ -1,0 +1,15 @@
+{
+    "name": "vilija/test_project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "billibons777@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
