@@ -9,7 +9,13 @@
         }
     ],
     "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Vilija\\hw_9\\":"hw_9"
+        } 
+    },   
     "require": {
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "psr/log": "^3.0"
     }
 }

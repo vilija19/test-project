@@ -82,6 +82,15 @@
                 0 => '1.0',
             ),
         ),
+        'psr/log' => array(
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/log',
+            'aliases' => array(),
+            'reference' => 'fe5ea303b0887d5caefd3d431c3e61ad47037001',
+            'dev_requirement' => false,
+        ),
         'ralouphie/getallheaders' => array(
             'pretty_version' => '3.0.3',
             'version' => '3.0.3.0',
