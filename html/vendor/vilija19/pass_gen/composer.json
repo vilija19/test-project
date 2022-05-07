@@ -1,0 +1,19 @@
+{
+    "name": "vilija19/pass_gen",
+    "description": "test package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vilija19",
+            "email": "billibons777@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Vilija19\\passgen\\":"src"
+        }
+    },
+    "require": {}
+}

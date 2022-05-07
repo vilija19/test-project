@@ -118,5 +118,16 @@
             'reference' => NULL,
             'dev_requirement' => false,
         ),
+        'vilija19/pass_gen' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../vilija19/pass_gen',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => '2d3434a84b584b7e17a3447db5040c821ac0ba84',
+            'dev_requirement' => false,
+        ),
     ),
 );

@@ -8,7 +8,7 @@
             "email": "billibons777@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Vilija\\hw_9\\":"hw_9"
@@ -16,6 +16,7 @@
     },   
     "require": {
         "guzzlehttp/guzzle": "^7.0",
-        "psr/log": "^3.0"
+        "psr/log": "^3.0",
+        "vilija19/pass_gen": "dev-main"
     }
 }

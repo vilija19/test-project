@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfd6d79917366bce22e4ea7d769e62d4",
+    "content-hash": "6209a810f321cec6b473127c172de70a",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -649,12 +649,52 @@
                 }
             ],
             "time": "2022-01-02T09:55:41+00:00"
+        },
+        {
+            "name": "vilija19/pass_gen",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vilija19/test_passgen.git",
+                "reference": "2d3434a84b584b7e17a3447db5040c821ac0ba84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vilija19/test_passgen/zipball/2d3434a84b584b7e17a3447db5040c821ac0ba84",
+                "reference": "2d3434a84b584b7e17a3447db5040c821ac0ba84",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vilija19\\passgen\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vilija19",
+                    "email": "billibons777@gmail.com"
+                }
+            ],
+            "description": "test package",
+            "support": {
+                "issues": "https://github.com/vilija19/test_passgen/issues",
+                "source": "https://github.com/vilija19/test_passgen/tree/main"
+            },
+            "time": "2022-05-07T21:45:08+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "vilija19/pass_gen": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

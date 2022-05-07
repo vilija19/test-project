@@ -17,6 +17,7 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
         'V' => 
         array (
             'Vilija\\hw_9\\' => 12,
+            'Vilija19\\passgen\\' => 17,
         ),
         'P' => 
         array (
@@ -36,6 +37,10 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
         'Vilija\\hw_9\\' => 
         array (
             0 => __DIR__ . '/../..' . '/hw_9',
+        ),
+        'Vilija19\\passgen\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vilija19/pass_gen/src',
         ),
         'Psr\\Log\\' => 
         array (
