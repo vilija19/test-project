@@ -11,12 +11,14 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Vilija\\hw_9\\":"hw_9"
+            "Vilija\\hw_9\\":"hw_9",
+            "Vilija19\\hw_10\\":"hw_10"
         } 
     },   
     "require": {
         "guzzlehttp/guzzle": "^7.0",
         "psr/log": "^3.0",
-        "vilija19/pass_gen": "dev-main"
+        "vilija19/pass_gen": "dev-main",
+        "vilija19/router": "dev-main"
     }
 }

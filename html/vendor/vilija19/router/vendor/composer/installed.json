@@ -1,0 +1,50 @@
+{
+    "packages": [
+        {
+            "name": "aigletter/contracts",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aigletter/contracts.git",
+                "reference": "0194d1f67855d482e0ce40e2f01ca7df0bf04ede"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aigletter/contracts/zipball/0194d1f67855d482e0ce40e2f01ca7df0bf04ede",
+                "reference": "0194d1f67855d482e0ce40e2f01ca7df0bf04ede",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "time": "2022-05-02T20:50:26+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Aigletter\\Contracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yurii Orlyk",
+                    "email": "aigletter@gmail.com"
+                }
+            ],
+            "description": "Interfaces for training project",
+            "support": {
+                "issues": "https://github.com/aigletter/contracts/issues",
+                "source": "https://github.com/aigletter/contracts/tree/1.0.2"
+            },
+            "install-path": "../aigletter/contracts"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

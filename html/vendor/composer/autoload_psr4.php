@@ -8,10 +8,13 @@ $baseDir = dirname($vendorDir);
 return array(
     'Vilija\\hw_9\\' => array($baseDir . '/hw_9'),
     'Vilija19\\passgen\\' => array($vendorDir . '/vilija19/pass_gen/src'),
+    'Vilija19\\hw_10\\' => array($baseDir . '/hw_10'),
+    'Vilija19\\Router\\' => array($vendorDir . '/vilija19/router/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
+    'Aigletter\\Contracts\\' => array($vendorDir . '/aigletter/contracts/src'),
 );

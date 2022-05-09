@@ -18,6 +18,8 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
         array (
             'Vilija\\hw_9\\' => 12,
             'Vilija19\\passgen\\' => 17,
+            'Vilija19\\hw_10\\' => 15,
+            'Vilija19\\Router\\' => 16,
         ),
         'P' => 
         array (
@@ -31,6 +33,10 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'A' => 
+        array (
+            'Aigletter\\Contracts\\' => 20,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -41,6 +47,14 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
         'Vilija19\\passgen\\' => 
         array (
             0 => __DIR__ . '/..' . '/vilija19/pass_gen/src',
+        ),
+        'Vilija19\\hw_10\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/hw_10',
+        ),
+        'Vilija19\\Router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vilija19/router/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -66,6 +80,10 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Aigletter\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aigletter/contracts/src',
         ),
     );
 
