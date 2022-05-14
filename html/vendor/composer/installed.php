@@ -143,6 +143,17 @@
             'reference' => NULL,
             'dev_requirement' => false,
         ),
+        'vilija19/db_component' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../vilija19/db_component',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'b203f5795c3e8122c6ebed9cd452cb7fe8af2412',
+            'dev_requirement' => false,
+        ),
         'vilija19/pass_gen' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
@@ -162,7 +173,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => 'd3c4d3ac17a074c967d93cf09c1cc83b273d9bc2',
+            'reference' => 'df8907e9f6ce8086922eaf97a6ddc7282274d0e5',
             'dev_requirement' => false,
         ),
     ),

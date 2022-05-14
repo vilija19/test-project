@@ -2,6 +2,13 @@
 
 namespace Vilija19\Router;
 
+/**
+ * @input data  - array or collable object.
+ * examples:
+ *  '/home/index' => [ \Aigletter\App\Controllers\HomeController::class , 'index'],
+ *  '/product/show'=> function () { echo('Run callback'); }
+ * 
+ */
 
 class Router implements \Aigletter\Contracts\Routing\RouteInterface
 {

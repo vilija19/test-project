@@ -19,6 +19,7 @@
         "guzzlehttp/guzzle": "^7.0",
         "psr/log": "^3.0",
         "vilija19/pass_gen": "dev-main",
-        "vilija19/router": "dev-main"
+        "vilija19/router": "dev-main",
+        "vilija19/db_component": "dev-main"
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee3193be1929fec9566923a764323364",
+    "content-hash": "0c71f0115fd836c84d399e36085bd6be",
     "packages": [
         {
             "name": "aigletter/contracts",
@@ -699,6 +699,47 @@
             "time": "2022-01-02T09:55:41+00:00"
         },
         {
+            "name": "vilija19/db_component",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vilija19/test_db_component.git",
+                "reference": "b203f5795c3e8122c6ebed9cd452cb7fe8af2412"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vilija19/test_db_component/zipball/b203f5795c3e8122c6ebed9cd452cb7fe8af2412",
+                "reference": "b203f5795c3e8122c6ebed9cd452cb7fe8af2412",
+                "shasum": ""
+            },
+            "require": {
+                "aigletter/contracts": "dev-master"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vilija19\\DbComponent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex",
+                    "email": "billibons777@gmail.com"
+                }
+            ],
+            "description": "test component for interact with DataBase",
+            "support": {
+                "issues": "https://github.com/vilija19/test_db_component/issues",
+                "source": "https://github.com/vilija19/test_db_component/tree/main"
+            },
+            "time": "2022-05-14T17:10:34+00:00"
+        },
+        {
             "name": "vilija19/pass_gen",
             "version": "dev-main",
             "source": {
@@ -742,12 +783,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vilija19/test_router.git",
-                "reference": "d3c4d3ac17a074c967d93cf09c1cc83b273d9bc2"
+                "reference": "df8907e9f6ce8086922eaf97a6ddc7282274d0e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vilija19/test_router/zipball/d3c4d3ac17a074c967d93cf09c1cc83b273d9bc2",
-                "reference": "d3c4d3ac17a074c967d93cf09c1cc83b273d9bc2",
+                "url": "https://api.github.com/repos/vilija19/test_router/zipball/df8907e9f6ce8086922eaf97a6ddc7282274d0e5",
+                "reference": "df8907e9f6ce8086922eaf97a6ddc7282274d0e5",
                 "shasum": ""
             },
             "require": {
@@ -775,7 +816,7 @@
                 "issues": "https://github.com/vilija19/test_router/issues",
                 "source": "https://github.com/vilija19/test_router/tree/main"
             },
-            "time": "2022-05-09T12:20:16+00:00"
+            "time": "2022-05-09T12:36:58+00:00"
         }
     ],
     "packages-dev": [],
@@ -783,7 +824,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "vilija19/pass_gen": 20,
-        "vilija19/router": 20
+        "vilija19/router": 20,
+        "vilija19/db_component": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

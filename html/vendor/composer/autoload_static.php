@@ -20,6 +20,7 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
             'Vilija19\\passgen\\' => 17,
             'Vilija19\\hw_10\\' => 15,
             'Vilija19\\Router\\' => 16,
+            'Vilija19\\DbComponent\\' => 21,
         ),
         'P' => 
         array (
@@ -55,6 +56,10 @@ class ComposerStaticInitbbfe4cc75ebc43643e3cad29b7ac9bdc
         'Vilija19\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/vilija19/router/src',
+        ),
+        'Vilija19\\DbComponent\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vilija19/db_component/src',
         ),
         'Psr\\Log\\' => 
         array (

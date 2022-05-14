@@ -26,7 +26,7 @@ summa(2,2,$logger);
  * Level 2 part start
  */
 $formatter = new FileFormatter();
-$writer = new FileWriter($formatter,'logDB');
+$writer = new FileWriter($formatter,'hw_9_log');
 $advLogger = new MyLoggerAdv($writer);
 
 summa(6,2,$advLogger);
