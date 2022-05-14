@@ -1,4 +1,14 @@
 <?php
+/**
+ * Пример работы с пакетом vilija19/db_component
+ * Пакет расчитан на работу с БД SQLite
+ * Файл БД logDB скопирован с ДЗ 9 и содержит записи логов
+ * 
+ * В билдере могут отсутствовать методы ->where, ->order , ->limit , ->offset .
+ * Остальные методы обязательны. 
+ * 
+ * @package vilija19/db_component
+ */
 
 namespace Vilija19\DbComponent;
 
