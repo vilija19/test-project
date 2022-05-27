@@ -12,7 +12,7 @@
     "autoload": {
         "psr-4": {
             "Vilija\\hw_9\\":"hw_9",
-            "Vilija19\\hw_10\\":"hw_10"
+            "Vilija19\\":"./"
         } 
     },   
     "require": {
