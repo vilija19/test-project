@@ -62,3 +62,15 @@
 14-05-22 11:59:30 level-*NOTICE* message: Result 8
 14-05-22 11:59:30 level-*NOTICE* message: Got values arg1 - 16 arg2 - 12
 14-05-22 11:59:30 level-*NOTICE* message: Result 28
+25-05-22 09:46:22 level-*NOTICE* message: Got values arg1 - 2 arg2 - 2
+25-05-22 09:46:22 level-*NOTICE* message: Result 4
+25-05-22 09:46:22 level-*NOTICE* message: Got values arg1 - 6 arg2 - 2
+25-05-22 09:46:22 level-*NOTICE* message: Result 8
+25-05-22 09:46:22 level-*NOTICE* message: Got values arg1 - 16 arg2 - 12
+25-05-22 09:46:22 level-*NOTICE* message: Result 28
+25-05-22 09:47:11 level-*NOTICE* message: Got values arg1 - 2 arg2 - 2
+25-05-22 09:47:11 level-*NOTICE* message: Result 4
+25-05-22 09:47:11 level-*NOTICE* message: Got values arg1 - 6 arg2 - 2
+25-05-22 09:47:11 level-*NOTICE* message: Result 8
+25-05-22 09:47:11 level-*NOTICE* message: Got values arg1 - 16 arg2 - 12
+25-05-22 09:47:11 level-*NOTICE* message: Result 28

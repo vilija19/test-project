@@ -1,2 +1,5 @@
 html/.devcontainer/
 vendor/
+opencart/
+ocstore/
+.env

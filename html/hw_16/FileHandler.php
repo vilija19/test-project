@@ -33,11 +33,13 @@ class FileHandler implements \Iterator
 
     public function current(): mixed
     {
-        if (!$this->valid()) {
-            throw new \Exception("Line number " . $this->pointer . " is not exists", 1);
+        $line = fgets($this->handle);
+        if ($line) {
+            throw new \Exception("Line number is not exists", 1);
         }
         fseek($this->handle, $this->pointer);
-        return fgets($this->handle);
+        $this->pointer = ftell($this->handle);
+        return $line;
     }
 
     public function key(): mixed
@@ -63,17 +65,5 @@ class FileHandler implements \Iterator
         }
         return $isValid;
     }
-    /**
-     * Метод читает и выводит в консоль указанную в $lineNumber строку
-     * @param int $lineNumber - номер строки для чтения
-     * @return void
-     */
-    public function readLine(int $lineNumber = 0): void
-    {
-        $this->pointer = $lineNumber;
-        echo 'Key: ' . (int)$this->key() . '. Content - ' . $this->current() . PHP_EOL;
-
-    }
-
 
 }

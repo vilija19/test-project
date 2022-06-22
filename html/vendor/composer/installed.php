@@ -29,7 +29,7 @@
             'aliases' => array(
                 0 => '7.4.x-dev',
             ),
-            'reference' => '82ca75f0b1f130f018febdda29af13086da5dbac',
+            'reference' => 'b720a2d0ff4a135ee0ef542082b2b979ff1f1d14',
             'dev_requirement' => false,
         ),
         'guzzlehttp/promises' => array(
@@ -173,7 +173,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => 'df8907e9f6ce8086922eaf97a6ddc7282274d0e5',
+            'reference' => '8fb64f1f9b69286edbc054b9d3789df1327b8ea6',
             'dev_requirement' => false,
         ),
     ),

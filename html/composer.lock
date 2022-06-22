@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "82ca75f0b1f130f018febdda29af13086da5dbac"
+                "reference": "b720a2d0ff4a135ee0ef542082b2b979ff1f1d14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/82ca75f0b1f130f018febdda29af13086da5dbac",
-                "reference": "82ca75f0b1f130f018febdda29af13086da5dbac",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b720a2d0ff4a135ee0ef542082b2b979ff1f1d14",
+                "reference": "b720a2d0ff4a135ee0ef542082b2b979ff1f1d14",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-20T14:21:21+00:00"
+            "time": "2022-05-16T15:07:31+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -783,12 +783,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vilija19/test_router.git",
-                "reference": "df8907e9f6ce8086922eaf97a6ddc7282274d0e5"
+                "reference": "8fb64f1f9b69286edbc054b9d3789df1327b8ea6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vilija19/test_router/zipball/df8907e9f6ce8086922eaf97a6ddc7282274d0e5",
-                "reference": "df8907e9f6ce8086922eaf97a6ddc7282274d0e5",
+                "url": "https://api.github.com/repos/vilija19/test_router/zipball/8fb64f1f9b69286edbc054b9d3789df1327b8ea6",
+                "reference": "8fb64f1f9b69286edbc054b9d3789df1327b8ea6",
                 "shasum": ""
             },
             "require": {
@@ -816,7 +816,7 @@
                 "issues": "https://github.com/vilija19/test_router/issues",
                 "source": "https://github.com/vilija19/test_router/tree/main"
             },
-            "time": "2022-05-09T12:36:58+00:00"
+            "time": "2022-05-25T09:15:22+00:00"
         }
     ],
     "packages-dev": [],
