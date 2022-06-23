@@ -64,6 +64,7 @@ class TaskController extends Controller
     {
         $html = '<form action="/task/'.$id.'" method="POST">';
         $html .= '<label for="name">Change Task name for task id '.$id.' :</label><br>';
+        $html .= '<input type="hidden" name="_method" value="PUT">';
         $html .= '<input type="text"  name="name"><br><br>';
         $html .= '<input type="submit" value="Submit"></form>';
         $html .= '</form>';
