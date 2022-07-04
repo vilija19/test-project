@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Label;
+use App\Models\Status;
+use App\Models\Task as ModelsTask;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -52,6 +55,33 @@ class TaskController extends Controller
     public function show($id)
     {
         Echo '<h1>Information about task with id -  ' . $id . ' ...</h1>';
+
+        $task = ModelsTask::where('id', $id)->first();
+        if ($task) {
+            Echo '<h2>Task status is : ' . $task->status->name . '</h2>';
+            Echo '<h2>Task labels are : </h2>';
+            foreach ($task->labels as $key => $label) {
+                Echo '<h3>label id '.$label->id.' is : ' . $label->name . '</h3>';
+            }
+        }
+        echo '<hr>';
+        Echo '<h2>Other info not related to task above </h2>';
+        $labelId = random_int(7,9);
+        $label = Label::where('id', $labelId)->first(); 
+        if ($label) {
+            Echo '<h2>Tasks with label id '.$labelId.' are: </h2>';
+            foreach ($label->tasks as $key => $task) {
+                Echo '<h3>task id '.$task->id.' is : ' . $task->title . '</h3>';
+            }
+        }
+        $statusId = random_int(7,9);
+        $status = Status::where('id', $statusId)->first();
+        if ($status) {
+            Echo '<h2>Tasks with status id '.$statusId.' are: </h2>';
+            foreach ($status->tasks as $key => $task) {
+                Echo '<h3>task id '.$task->id.' is : ' . $task->title . '</h3>';
+            }
+        }
     }
 
     /**
