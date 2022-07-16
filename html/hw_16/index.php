@@ -14,7 +14,7 @@ try {
 
 echo 'Key: ' . (int)$fileReader->key() . '. Content - ' . $fileReader->current() . PHP_EOL;
 
-//$fileReader->next();
+$fileReader->next();
 
 echo 'Key: ' . (int)$fileReader->key() . '. Content - ' . $fileReader->current() . PHP_EOL;
 

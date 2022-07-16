@@ -16,16 +16,22 @@ class TaskController extends Controller
      */
     public function index()
     {
-        Echo '<h1>This page will show list of all users</h1>';
+//        Echo '<h1>This page will show list of all tasks</h1>';
+
+        $data['tasks'] = ModelsTask::all();
+
+        return view('tasks-main', $data);
     }
 
     /**
      * Show the form for creating a new resource.
-     *
+     * route GET|HEAD task/create
+     * 
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
+        /* FOR HW_20
         $html = '<form action="/task" method="POST">';
         $html .= '<label for="name">Task name:</label><br>';
         $html .= '<input type="text"  name="name"><br><br>';
@@ -33,6 +39,11 @@ class TaskController extends Controller
         $html .= '</form>';
         
         echo $html;
+        */
+        $data['users'] = \App\Models\User::all();
+
+        return view('form-create',$data);
+
     }
 
     /**
@@ -43,7 +54,23 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        Echo '<h1>Task ' . $request['name'] . ' has been created and stored</h1>';
+        $message = '';
+        $validatedData = $request->validate([
+            'task_name' => 'required|min:10|max:60',
+            'content' => 'required|min:10|max:255',
+            'creator_id' => 'required|integer',
+            'labels' => 'array',
+        ]);
+
+        $task = new ModelsTask();
+        $task->creator_id = $request->creator_id;
+        $task->title = $request->task_name;
+        $task->content = $request->content;
+        $task->status_id = 7; // 7 - to do
+        $task->save();
+        $message = '<p>Task "' . $task->title . '" has been created and stored</p>';
+
+        return redirect('/task')->with('message', $message);
     }
 
     /**
@@ -86,12 +113,14 @@ class TaskController extends Controller
 
     /**
      * Show the form for editing the specified resource.
+     * route GET|HEAD        task/{task}/edit
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
+        /* FOR HW_20
         $html = '<form action="/task/'.$id.'" method="POST">';
         $html .= '<label for="name">Change Task name for task id '.$id.' :</label><br>';
         $html .= '<input type="hidden" name="_method" value="PUT">';
@@ -100,6 +129,16 @@ class TaskController extends Controller
         $html .= '</form>';
         
         echo $html;
+        */
+
+        $data['task'] = ModelsTask::where('id', $id)->first();
+        if (!$data['task']) {
+            return redirect('/task')->with('error', 'Task with id ' . $id . ' not found');
+        }
+        $data['statuses'] = Status::all();
+        $data['labels'] = Label::all();
+
+        return view('form-task-edit',$data);
     }
 
     /**
@@ -110,8 +149,30 @@ class TaskController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        Echo '<h1>Task ' . $id . '  has been stored with name ' . $request['name'] . '</h1>';
+    {   
+        $message = '';
+
+        $validatedData = $request->validate([
+            'task_name' => 'required|min:10|max:60',
+            'content' => 'required|min:10|max:255',
+            'status_id' => 'required|integer',
+            'labels' => 'array',
+        ]);
+
+        $task = ModelsTask::where('id', $id)->first();
+        if ($task) {
+            $task->title = $request->task_name;
+            $task->content = $request->content;
+            $task->status_id = $request->status_id;
+            $task->save();
+            $task->labels()->sync($request->labels);
+
+            $message = '<p>Task "' . $task->title . '" has been updated</p>';
+        }
+        else {
+            $message = '<p>Task with id ' . $id . ' not found</p>';
+        }
+        return redirect('/task')->with('message', $message);
     }
 
     /**
@@ -122,6 +183,20 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        Echo '<h1>Task ' . $id . '  has been  destroed </h1>';
+        $message = '';
+        $task = ModelsTask::where('id', $id)->first();
+        if ($task) {
+            $message = '<p>Task "' . $task->title . '" has been deleted</p>';
+            /**
+             * Удаляем все связи между задачей и метками. 
+             * Иначе будет ошибка при удалении задачи.
+             */
+            $task->labels()->detach();
+            $task->delete();
+        }
+        else {
+            $message = '<p>Task with id ' . $id . ' not found</p>';
+        }
+        return redirect('/task')->with('message', $message);
     }
 }

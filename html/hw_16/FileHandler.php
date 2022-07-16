@@ -34,7 +34,7 @@ class FileHandler implements \Iterator
     public function current(): mixed
     {
         $line = fgets($this->handle);
-        if ($line) {
+        if (!$line) {
             throw new \Exception("Line number is not exists", 1);
         }
         fseek($this->handle, $this->pointer);
