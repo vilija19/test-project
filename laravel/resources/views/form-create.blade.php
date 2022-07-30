@@ -31,8 +31,26 @@
       <option value="{{ $user->id }}">{{ $user->name }}</option>
       @endif
     @endforeach
-   </select> <br><br>
+   </select>
   <br>
+  <label for="label_id">Choose labels for task:</label><br>
+    @foreach ($labels as $label)
+      <input type="checkbox" name="labels[]" value="{{$label->id}}">
+      <label>{{$label->name}}</label><br>
+    @endforeach
+   <br>  
+  <label for="status_id">Choose a task status:</label><br>
+   <select id="status_id" name="status_id">
+    @foreach ($statuses as $status)
+      @if ($status->id == $statuses->first()->id)
+        <option value="{{ $status->id }}" selected>{{ $status->name }}</option>
+      @else
+      <option value="{{ $status->id }}">{{ $status->name }}</option>
+      @endif
+    @endforeach
+   </select>
+  <br>   
+   <br><br>
   <input type="submit" value="Submit">
 </fieldset>
 </form>

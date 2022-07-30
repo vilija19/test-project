@@ -41,7 +41,9 @@ class TaskController extends Controller
         echo $html;
         */
         $data['users'] = \App\Models\User::all();
-
+        $data['statuses'] = Status::all();
+        $data['labels'] = Label::all();
+        
         return view('form-create',$data);
 
     }
@@ -60,14 +62,16 @@ class TaskController extends Controller
             'content' => 'required|min:10|max:255',
             'creator_id' => 'required|integer',
             'labels' => 'array',
+            'status_id' => 'required|integer',
         ]);
 
         $task = new ModelsTask();
         $task->creator_id = $request->creator_id;
         $task->title = $request->task_name;
         $task->content = $request->content;
-        $task->status_id = 7; // 7 - to do
+        $task->status_id = $request->status_id;
         $task->save();
+        $task->labels()->sync($request->labels);
         $message = '<p>Task "' . $task->title . '" has been created and stored</p>';
 
         return redirect('/task')->with('message', $message);
