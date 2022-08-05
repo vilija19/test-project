@@ -21,20 +21,10 @@ Route::get('/', function () {
 Route::get('home/', [App\Http\Controllers\HomeController::class, 'index'])
 ->name('home.index');
 
-Route::prefix('user')->group(function(){
-    Route::post('register/{userName}', [App\Http\Controllers\UsersController::class, 'register'])
-        ->where('userName','\w{3,10}')
-        ->name('user.register');
-        Route::post('login/{userName}', [App\Http\Controllers\UsersController::class, 'login'])
-        ->where('userName','\w{3,10}')
-        ->name('user.login');   
-        Route::post('delete/{userName}', [App\Http\Controllers\UsersController::class, 'delete'])
-        ->where('userName','\w{3,10}')
-        ->name('user.delete');    
-        Route::get('show/{userName}', [App\Http\Controllers\UsersController::class, 'show'])
-        ->where('userName','\w{3,10}')
-        ->name('user.show');                 
-});
-
 Route::resource('task', TaskController::class);
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';

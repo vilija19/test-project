@@ -18,7 +18,11 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .container {
+                width: 1450px;
+                margin: 0 auto;
+            }            
         </style>
     </head>
     <body class="antialiased">
-        <h1>Task Manager</h1>
+       
