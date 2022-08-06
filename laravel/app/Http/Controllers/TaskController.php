@@ -88,7 +88,13 @@ class TaskController extends Controller
         Echo '<h1>Information about task with id -  ' . $id . ' ...</h1>';
 
         $task = ModelsTask::where('id', $id)->first();
+
         if ($task) {
+            Echo '<h2>Task history</h2>';
+            foreach ($task->history as $value) {
+                echo '<p>' . $value->user_id . ' - ' . $value->field_name . ': ' . $value->old_content . ' => ' . $value->new_content . '</p>';
+            }
+
             Echo '<h2>Task status is : ' . $task->status->name . '</h2>';
             Echo '<h2>Task labels are : </h2>';
             foreach ($task->labels as $key => $label) {

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+
 /**
  * @property int $id
  * @property bigInteger $creator_id
@@ -14,6 +15,8 @@ namespace App\Models;
  */
 class Task extends \Illuminate\Database\Eloquent\Model
 {
+    use \Vilija19\Modelshistory\ModelsHistoryTrait;
+
     protected $name;
     /**
      * Get the status for the task.
